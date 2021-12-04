@@ -1,0 +1,1 @@
+This is the primer monitor. Never miss an opportunity to stock up again!
