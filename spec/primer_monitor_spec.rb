@@ -1,8 +1,8 @@
-require './spec_helper'
-require '../primer_monitor'
+require 'spec_helper'
+require './find_primers'
 
-RSpec.describe PrimerMonitor do
-  it 'is true' do
-    expect(PrimerMonitor.get_availability.length).to eq 9
+RSpec.describe FindPrimers do
+  it 'kinda works' do
+    expect(FindPrimers.call.length).to eq 13
   end
 end

@@ -5,6 +5,7 @@ GEM
     childprocess (4.1.0)
     diff-lcs (1.4.4)
     dotenv (2.7.6)
+    json (2.6.1)
     rexml (3.2.5)
     rspec (3.10.0)
       rspec-core (~> 3.10.0)
@@ -31,6 +32,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   dotenv
+  json
   rspec
   selenium-webdriver
 
