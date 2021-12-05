@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/find_primers.rb'
+
+logger = Logger.new(STDOUT)
+logger.info("Finding primers...")
+
+results = FindPrimers.call
+
+logger.info(results)
