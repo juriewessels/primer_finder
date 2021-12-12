@@ -25,6 +25,8 @@ class FindPrimers
     end
 
     Notify.call(message: FormatMessage.call(products: products.flatten))
+
+    products
   end
 
   private

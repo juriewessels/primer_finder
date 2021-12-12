@@ -1,0 +1,4372 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session
+    body:
+      encoding: UTF-8
+      string: '{"capabilities":{"alwaysMatch":{"browserName":"chrome","goog:chromeOptions":{"args":["--headless"]}}}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '102'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '797'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"96.0.4664.93","chrome":{"chromedriverVersion":"96.0.4664.45
+        (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947})","userDataDir":"/var/folders/_9/d16cd40d5_q59hhv7b_qb30h0000gn/T/.com.google.Chrome.S2ZSIJ"},"goog:chromeOptions":{"debuggerAddress":"localhost:54594"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
+        os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss
+        and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"6176a82b958df97f305d4b29ccccc0e7"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:10 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/url
+    body:
+      encoding: UTF-8
+      string: '{"url":"https://www.gotenda.com/product-category/reloading/primers/pistol-primers/"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '84'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '14'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":null}'
+  recorded_at: Sun, 12 Dec 2021 16:35:17 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".product"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '43'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '1512'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"e855aca9-3f57-4bcc-947d-dd2eb35c8f09"},{"element-6066-11e4-a52e-4f735466cecf":"a4488587-1a59-49be-97d1-6e38de25cb91"},{"element-6066-11e4-a52e-4f735466cecf":"9e40c7e4-09dc-45f7-b585-0851da23424e"},{"element-6066-11e4-a52e-4f735466cecf":"8d7b85ff-69e5-4a22-ac3d-b1cec402f89c"},{"element-6066-11e4-a52e-4f735466cecf":"7959334c-58ab-462e-9f8d-c5bf25e6b9d8"},{"element-6066-11e4-a52e-4f735466cecf":"c35b3a5d-991b-46a1-b9e1-beb4e7f1c984"},{"element-6066-11e4-a52e-4f735466cecf":"df9ce48c-c9f9-4b2e-82e7-962d7d0f0732"},{"element-6066-11e4-a52e-4f735466cecf":"9b36399e-a806-4145-9405-d08dd9997881"},{"element-6066-11e4-a52e-4f735466cecf":"b17934da-a871-4eb8-874e-8e9289f8e9ca"},{"element-6066-11e4-a52e-4f735466cecf":"75da1e59-0410-4023-aa09-6e1447a739f3"},{"element-6066-11e4-a52e-4f735466cecf":"d5fd0567-1792-41c9-97cd-f11a2654f051"},{"element-6066-11e4-a52e-4f735466cecf":"11f98812-f242-4602-8478-05b0142df458"},{"element-6066-11e4-a52e-4f735466cecf":"222a512d-af0c-45fb-b406-123edd59b431"},{"element-6066-11e4-a52e-4f735466cecf":"6c4e7db0-e0f0-4815-a97a-d3870009578d"},{"element-6066-11e4-a52e-4f735466cecf":"a7f78b15-c017-403c-b120-41d61ebf26e2"},{"element-6066-11e4-a52e-4f735466cecf":"b15a9131-7aaa-461c-9d86-be91e6c63be6"},{"element-6066-11e4-a52e-4f735466cecf":"363de50d-5702-48d8-a41f-bff3b90effef"},{"element-6066-11e4-a52e-4f735466cecf":"f3747400-7881-4b44-99b9-32b604d02fd7"},{"element-6066-11e4-a52e-4f735466cecf":"c2674d8a-5a00-4c4d-b995-1df1a5c9f6d6"}]}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/e855aca9-3f57-4bcc-947d-dd2eb35c8f09/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".products-title"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '50'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"05bf30ee-df80-4705-af68-2b8274efca62"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/05bf30ee-df80-4705-af68-2b8274efca62/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '78'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Federal Large Pistol Magnum Match Primers, No. GM155M, Box
+        of 1000"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/a4488587-1a59-49be-97d1-6e38de25cb91/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".products-title"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '50'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"fde97b9d-952e-420c-8c35-fd4bb94fb748"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/fde97b9d-952e-420c-8c35-fd4bb94fb748/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '52'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Campro Small Pistol Primers, Box of 1000"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/a4488587-1a59-49be-97d1-6e38de25cb91/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".stock"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '41'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"c76b2c34-61e9-4b1a-ac9c-399d315b54da"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/c76b2c34-61e9-4b1a-ac9c-399d315b54da/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '24'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Out of stock"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/a4488587-1a59-49be-97d1-6e38de25cb91/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".amount"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '42'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"84e0adaa-c258-4837-b810-9eac30d4cced"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/84e0adaa-c258-4837-b810-9eac30d4cced/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '18'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"$54.99"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/9e40c7e4-09dc-45f7-b585-0851da23424e/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".products-title"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '50'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"485bbfeb-6b53-4c7a-bd5d-1ae4aefefc93"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/485bbfeb-6b53-4c7a-bd5d-1ae4aefefc93/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '57'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Winchester Small Pistol Magnum Primers 1000pc"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/9e40c7e4-09dc-45f7-b585-0851da23424e/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".stock"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '41'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"048c04e3-57a0-4552-bce9-0645522d6336"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/048c04e3-57a0-4552-bce9-0645522d6336/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '24'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Out of stock"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/9e40c7e4-09dc-45f7-b585-0851da23424e/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".amount"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '42'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"2c4a953e-6002-453b-8560-fb24627655d4"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/2c4a953e-6002-453b-8560-fb24627655d4/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '18'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"$49.99"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/8d7b85ff-69e5-4a22-ac3d-b1cec402f89c/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".products-title"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '50'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"56d0d776-b99b-4cb2-8ea7-739ab5d34d0d"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/56d0d776-b99b-4cb2-8ea7-739ab5d34d0d/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '64'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Federal Large Pistol Magnum Primers, No155, 1000/Box"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/7959334c-58ab-462e-9f8d-c5bf25e6b9d8/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".products-title"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '50'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"cfffe8e7-c836-4526-a1eb-6cdf7071a0e4"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/cfffe8e7-c836-4526-a1eb-6cdf7071a0e4/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '37'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Lyman Primer Turning Tray"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/c35b3a5d-991b-46a1-b9e1-beb4e7f1c984/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".products-title"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '50'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"1bf551d3-a091-4185-9061-d7fcf76585f6"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/1bf551d3-a091-4185-9061-d7fcf76585f6/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '71'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Federal Large Pistol Match Primers, No. GM150M, Box of 1000"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/df9ce48c-c9f9-4b2e-82e7-962d7d0f0732/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".products-title"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '50'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"cb33d531-bfd4-457f-9db3-239738a194e9"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/cb33d531-bfd4-457f-9db3-239738a194e9/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '50'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Winchester Large Pistol Primers 1000pc"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/9b36399e-a806-4145-9405-d08dd9997881/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".products-title"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '50'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"2ee28f31-68a9-4205-8de7-1f5b62cb6871"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/2ee28f31-68a9-4205-8de7-1f5b62cb6871/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '57'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Sellier & Bellot Small pistol primer 1000/box"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/9b36399e-a806-4145-9405-d08dd9997881/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".stock"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '41'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"9beb3f06-9956-49e4-b0ef-fbdd003f0604"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/9beb3f06-9956-49e4-b0ef-fbdd003f0604/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '24'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Out of stock"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/9b36399e-a806-4145-9405-d08dd9997881/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".amount"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '42'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"af42259c-c1bb-4bc4-9f65-efa6c4467665"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/af42259c-c1bb-4bc4-9f65-efa6c4467665/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '18'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"$52.99"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/b17934da-a871-4eb8-874e-8e9289f8e9ca/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".products-title"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '50'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"5ab0660f-af63-4d3f-9af7-6a71138f8fbb"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/5ab0660f-af63-4d3f-9af7-6a71138f8fbb/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '71'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Federal Small Pistol Match Primers, No. GM100M, Box of 1000"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/b17934da-a871-4eb8-874e-8e9289f8e9ca/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".stock"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '41'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"c0a71be8-41bc-43c5-b3c3-0f1a3b781b53"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/c0a71be8-41bc-43c5-b3c3-0f1a3b781b53/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '24'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Out of stock"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/b17934da-a871-4eb8-874e-8e9289f8e9ca/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".amount"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '42'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"312d2dc3-cc35-46e2-bd4d-fddfd05f6dab"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/312d2dc3-cc35-46e2-bd4d-fddfd05f6dab/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '18'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"$79.99"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/75da1e59-0410-4023-aa09-6e1447a739f3/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".products-title"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '50'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"4f698795-ea1d-48bf-af84-04704a050c06"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/4f698795-ea1d-48bf-af84-04704a050c06/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '85'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"FEDERAL GM200M PREMIUM GOLD MEDAL MATCH SMALL MAG PISTOL
+        PRIMER 1000/Case"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/d5fd0567-1792-41c9-97cd-f11a2654f051/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".products-title"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '50'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"0ea60912-ea53-451d-9f9d-560caa0bf251"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/0ea60912-ea53-451d-9f9d-560caa0bf251/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '56'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"CCI #550 SMALL PISTOL MAGNUM PRIMER 1000/BOX"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/d5fd0567-1792-41c9-97cd-f11a2654f051/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".stock"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '41'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"ed3b4e91-82f0-497d-bebf-a1472d5bfb38"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/ed3b4e91-82f0-497d-bebf-a1472d5bfb38/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '24'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Out of stock"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/d5fd0567-1792-41c9-97cd-f11a2654f051/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".amount"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '42'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"e13f0115-7d4a-4bd0-bb92-e89777675548"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/e13f0115-7d4a-4bd0-bb92-e89777675548/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '18'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"$63.99"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/11f98812-f242-4602-8478-05b0142df458/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".products-title"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '50'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"151f89b4-3b34-4558-95f3-4527ffe2a1d6"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/151f89b4-3b34-4558-95f3-4527ffe2a1d6/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '56'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"CCI #350 LARGE PISTOL MAGNUM PRIMER 1000/BOX"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/222a512d-af0c-45fb-b406-123edd59b431/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".products-title"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '50'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"9e29a95f-0671-4518-a6ac-964a93601de5"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/9e29a95f-0671-4518-a6ac-964a93601de5/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '62'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Federal Small Pistol Primers, No. 100, Box of 1000"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/222a512d-af0c-45fb-b406-123edd59b431/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".stock"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '41'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"b0f0258e-d6bc-4f7c-a29c-2fbbe9443539"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/b0f0258e-d6bc-4f7c-a29c-2fbbe9443539/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '24'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Out of stock"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/222a512d-af0c-45fb-b406-123edd59b431/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".amount"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '42'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"90a81e80-89ae-4c70-8a1a-a62cd783236f"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/90a81e80-89ae-4c70-8a1a-a62cd783236f/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '18'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"$79.99"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/6c4e7db0-e0f0-4815-a97a-d3870009578d/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".products-title"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '50'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"0fc14215-464a-4a34-8703-8c78c953f53c"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/0fc14215-464a-4a34-8703-8c78c953f53c/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '57'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Sellier & Bellot Large pistol primer 1000/box"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/a7f78b15-c017-403c-b120-41d61ebf26e2/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".products-title"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '50'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"7b2b5636-3b7d-4093-85dc-39f564ef6e1f"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/7b2b5636-3b7d-4093-85dc-39f564ef6e1f/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '50'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Winchester Small Pistol Primers 1000pc"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/a7f78b15-c017-403c-b120-41d61ebf26e2/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".stock"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '41'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"4465e448-8b53-4f4b-b728-1a6a4c8a88f2"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/4465e448-8b53-4f4b-b728-1a6a4c8a88f2/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '24'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Out of stock"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/a7f78b15-c017-403c-b120-41d61ebf26e2/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".amount"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '42'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"bd22fe57-39d2-4c1f-ac7e-f4a2a3f1c937"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/bd22fe57-39d2-4c1f-ac7e-f4a2a3f1c937/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '18'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"$49.99"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/b15a9131-7aaa-461c-9d86-be91e6c63be6/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".products-title"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '50'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"3a908b2f-1493-495e-839b-8157fc6d5c97"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/3a908b2f-1493-495e-839b-8157fc6d5c97/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '64'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Federal Small Pistol Magnum Primers, No200, 1000/Box"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/b15a9131-7aaa-461c-9d86-be91e6c63be6/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".stock"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '41'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"601865d0-91fb-4ed2-87cb-eb5ce124123e"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/601865d0-91fb-4ed2-87cb-eb5ce124123e/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '20'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"In stock"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/b15a9131-7aaa-461c-9d86-be91e6c63be6/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".amount"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '42'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"89c40e8a-8415-4d58-afe4-5c94898bc5bd"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/89c40e8a-8415-4d58-afe4-5c94898bc5bd/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '18'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"$89.99"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/363de50d-5702-48d8-a41f-bff3b90effef/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".products-title"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '50'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"070b62e4-5291-48cb-91d8-a95952e35965"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/070b62e4-5291-48cb-91d8-a95952e35965/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '57'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Federal Large Pistol Primers, No150, 1000/Box"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/f3747400-7881-4b44-99b9-32b604d02fd7/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".products-title"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '50'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"0a94adc9-e303-4d03-adac-eb0130cde54a"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/0a94adc9-e303-4d03-adac-eb0130cde54a/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '51'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"CCI Large Pistol Primer #300 (1000/box)"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/c2674d8a-5a00-4c4d-b995-1df1a5c9f6d6/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".products-title"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '50'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"d28c5038-92a5-4db1-b107-abcd4dab9fec"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/d28c5038-92a5-4db1-b107-abcd4dab9fec/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '51'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"CCI Small Pistol Primer #500 (1000/box)"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/c2674d8a-5a00-4c4d-b995-1df1a5c9f6d6/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".stock"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '41'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"18b76947-4ea8-4f50-b538-afb32453c4b9"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/18b76947-4ea8-4f50-b538-afb32453c4b9/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '24'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Out of stock"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/c2674d8a-5a00-4c4d-b995-1df1a5c9f6d6/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".amount"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '42'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"d325adaa-5a0c-4ff6-86c0-478c689370d2"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9650/session/6176a82b958df97f305d4b29ccccc0e7/element/d325adaa-5a0c-4ff6-86c0-478c689370d2/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '18'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"$79.99"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session
+    body:
+      encoding: UTF-8
+      string: '{"capabilities":{"alwaysMatch":{"browserName":"chrome","goog:chromeOptions":{"args":["--headless"]}}}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '102'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '797'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"96.0.4664.93","chrome":{"chromedriverVersion":"96.0.4664.45
+        (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947})","userDataDir":"/var/folders/_9/d16cd40d5_q59hhv7b_qb30h0000gn/T/.com.google.Chrome.934uvP"},"goog:chromeOptions":{"debuggerAddress":"localhost:54694"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
+        os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss
+        and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"187892ea7826e4e84f6ddd7e096fa52a"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:19 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/url
+    body:
+      encoding: UTF-8
+      string: '{"url":"https://www.tesro.ca/reloading/primers.html?limit=all"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '63'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '14'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":null}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".products-grid > .item"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '57'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '1591'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"d5d16072-c5e8-4a1a-a928-1034653be2b7"},{"element-6066-11e4-a52e-4f735466cecf":"052781bf-6e62-43bd-91ab-04ee54785eaf"},{"element-6066-11e4-a52e-4f735466cecf":"5daa0364-3cd0-4870-ab72-80a2cf1b3ce0"},{"element-6066-11e4-a52e-4f735466cecf":"eed792ec-b421-41ac-bc75-136344f341da"},{"element-6066-11e4-a52e-4f735466cecf":"19db9579-2d79-4010-a417-e498a0491f6e"},{"element-6066-11e4-a52e-4f735466cecf":"e3b82d7d-6544-4e9f-ae3d-22dd6a4389ca"},{"element-6066-11e4-a52e-4f735466cecf":"dea04839-51ee-4048-b42e-d1fca38d2e64"},{"element-6066-11e4-a52e-4f735466cecf":"ffb11829-253e-428d-bfd6-616451fad931"},{"element-6066-11e4-a52e-4f735466cecf":"f02c0697-17f4-450d-b3b9-8735dc3506a2"},{"element-6066-11e4-a52e-4f735466cecf":"0a2df29d-388f-496b-bacc-fab5d8fa08dd"},{"element-6066-11e4-a52e-4f735466cecf":"142cd127-7121-490f-a46e-bd1e60bb22ff"},{"element-6066-11e4-a52e-4f735466cecf":"b9ed8b31-05ae-44fa-8040-0547109766ef"},{"element-6066-11e4-a52e-4f735466cecf":"afd5a954-9a7b-4e10-8107-37f79072f1ea"},{"element-6066-11e4-a52e-4f735466cecf":"ff51a243-b996-4385-aceb-9605e75424cf"},{"element-6066-11e4-a52e-4f735466cecf":"16f3f219-45cb-432d-a8e7-3a59660db51b"},{"element-6066-11e4-a52e-4f735466cecf":"4adcc77f-b4b2-4e32-98d5-d173bbea4c96"},{"element-6066-11e4-a52e-4f735466cecf":"62978533-d381-438b-a151-5b6dd53fd553"},{"element-6066-11e4-a52e-4f735466cecf":"25af673b-a876-4d5d-9452-9d1c0ceca056"},{"element-6066-11e4-a52e-4f735466cecf":"8b16f413-aac4-4ce4-ad6d-190a525b3bae"},{"element-6066-11e4-a52e-4f735466cecf":"81947f7a-f2d4-47f1-bfbe-cee8b4e8104a"}]}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/d5d16072-c5e8-4a1a-a928-1034653be2b7/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".product-name"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '48'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"c9f88d3a-e232-4820-adcd-1f54c1ac21c8"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/c9f88d3a-e232-4820-adcd-1f54c1ac21c8/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '79'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Campro Primers - Primer Ginex 4,5/3-P1 - Small Pistol - Box
+        of 1000"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/d5d16072-c5e8-4a1a-a928-1034653be2b7/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".availability > span"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '55'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"6d84e8c7-9d5e-4680-aa28-8ec3700d9f41"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/6d84e8c7-9d5e-4680-aa28-8ec3700d9f41/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '24'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Out of stock"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/d5d16072-c5e8-4a1a-a928-1034653be2b7/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".price"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '41'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"4356324c-d5c3-4169-87aa-5d0ffa58a804"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/4356324c-d5c3-4169-87aa-5d0ffa58a804/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '18'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"$44.99"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/052781bf-6e62-43bd-91ab-04ee54785eaf/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".product-name"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '48'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"576baf9d-37b2-4095-9c41-bf3ca8de9f73"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/576baf9d-37b2-4095-9c41-bf3ca8de9f73/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '56'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"CCI. 400 STD SMALL RIFLE PRIMERS box of 1000"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/5daa0364-3cd0-4870-ab72-80a2cf1b3ce0/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".product-name"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '48'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"94602b81-3ed6-4235-a565-028f8ef3d7d9"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/94602b81-3ed6-4235-a565-028f8ef3d7d9/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '57'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"CCI. 500 STD SMALL PISTOL PRIMERS box of 1000"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/5daa0364-3cd0-4870-ab72-80a2cf1b3ce0/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".availability > span"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '55'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"147d006e-73b7-496b-a193-f9d862b20453"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/147d006e-73b7-496b-a193-f9d862b20453/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '24'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Out of stock"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/5daa0364-3cd0-4870-ab72-80a2cf1b3ce0/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".price"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '41'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"7e9a055c-b6b7-45af-a159-0d76157d3c41"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/7e9a055c-b6b7-45af-a159-0d76157d3c41/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '18'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"$59.99"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/eed792ec-b421-41ac-bc75-136344f341da/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".product-name"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '48'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"50eab428-c478-46e2-b288-d355aefebe2a"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/50eab428-c478-46e2-b288-d355aefebe2a/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '76'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Campro Primers - Primer Ginex 4.5/3-P3 SMALL RIFLE - Box
+        of 1000"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/19db9579-2d79-4010-a417-e498a0491f6e/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".product-name"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '48'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"60c4e502-7eda-4346-bef2-3806bf495039"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/60c4e502-7eda-4346-bef2-3806bf495039/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '78'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Campro Primers - Primer Ginex 5,5/3-P1 - Large Pistol - Box
+        of 100"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/e3b82d7d-6544-4e9f-ae3d-22dd6a4389ca/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".product-name"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '48'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"9459022a-50ec-47d6-945b-8c2f7913a8dc"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/9459022a-50ec-47d6-945b-8c2f7913a8dc/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '86'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Federal - Premium Gold Medal Large Rifle Match Primers -
+        #210M Box of 1000"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/dea04839-51ee-4048-b42e-d1fca38d2e64/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".product-name"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '48'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"b9c1bb9d-2f94-421f-8c6d-65385ec3d0ac"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/b9c1bb9d-2f94-421f-8c6d-65385ec3d0ac/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '66'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"CCI - #BR2 LARGE RIFLE PRIMERS (Benchrest) Box of 1000"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/ffb11829-253e-428d-bfd6-616451fad931/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".product-name"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '48'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"674e3b37-f39e-4237-82da-5e2470384013"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/674e3b37-f39e-4237-82da-5e2470384013/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '66'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"CCI - #BR4 SMALL RIFLE PRIMERS (Benchrest) Box of 1000"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/f02c0697-17f4-450d-b3b9-8735dc3506a2/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".product-name"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '48'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"b5aa42ca-c721-4270-abd5-f3b8ae1e3e0b"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/b5aa42ca-c721-4270-abd5-f3b8ae1e3e0b/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '45'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"CCI. 300 STD LARGE PISTOL PRIMERS"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/0a2df29d-388f-496b-bacc-fab5d8fa08dd/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".product-name"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '48'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"787fd025-4fdb-4ea5-9aed-8e34b90ce66f"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/787fd025-4fdb-4ea5-9aed-8e34b90ce66f/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '74'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Sellier and Bellot Primers - Primer Small Pistol - Box of
+        1000"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/0a2df29d-388f-496b-bacc-fab5d8fa08dd/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".availability > span"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '55'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"35defaaf-4103-426d-affc-7302398f9fe9"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/35defaaf-4103-426d-affc-7302398f9fe9/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '24'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Out of stock"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/0a2df29d-388f-496b-bacc-fab5d8fa08dd/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".price"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '41'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"ac4fc5e3-b4f0-4036-b0b4-6c7553e71158"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/ac4fc5e3-b4f0-4036-b0b4-6c7553e71158/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '18'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"$59.99"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/142cd127-7121-490f-a46e-bd1e60bb22ff/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".product-name"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '48'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"5c4d3dff-4a84-479b-abd6-5c67879b035d"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/5c4d3dff-4a84-479b-abd6-5c67879b035d/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '63'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"CCI. 250 STD LARGE RIFLE MAGNUM PRIMERS Box of 1000"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/b9ed8b31-05ae-44fa-8040-0547109766ef/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".product-name"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '48'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"12ba16e5-277c-4210-b798-4aef3c0c3684"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/12ba16e5-277c-4210-b798-4aef3c0c3684/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '44'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"CCI. 200 STD LARGE RIFLE PRIMERS"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/afd5a954-9a7b-4e10-8107-37f79072f1ea/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".product-name"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '48'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"c7bd68c4-6044-4c5d-aa82-9edf1761166a"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/c7bd68c4-6044-4c5d-aa82-9edf1761166a/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Federal - Premium Gold Medal Small Rifle Match Primers -
+        #205M - Box of 1000"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/ff51a243-b996-4385-aceb-9605e75424cf/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".product-name"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '48'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"e01d783e-eb1a-4da3-9b4f-2f872a46c0d1"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/e01d783e-eb1a-4da3-9b4f-2f872a46c0d1/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '66'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Sellier and Bellot Primers - Small Rifle - Box of 1000"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/16f3f219-45cb-432d-a8e7-3a59660db51b/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".product-name"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '48'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"653d80d8-f994-40ee-8742-6924ff818106"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/653d80d8-f994-40ee-8742-6924ff818106/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '67'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Federal - Small Rifle Match Primers - #205 pack of 1000"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/4adcc77f-b4b2-4e32-98d5-d173bbea4c96/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".product-name"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '48'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"1d1cc72a-ebcb-4cef-aa9b-69c8114af88e"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/1d1cc72a-ebcb-4cef-aa9b-69c8114af88e/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '74'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Sellier and Bellot Primers - Primer Large Pistol - Box of
+        1000"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/62978533-d381-438b-a151-5b6dd53fd553/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".product-name"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '48'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"026cbf01-1aac-4547-bd0c-899b8b6107e5"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/026cbf01-1aac-4547-bd0c-899b8b6107e5/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '78'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Federal - Premium Gold Medal Large Rifle Mag Match Primers
+        - #215M"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/25af673b-a876-4d5d-9452-9d1c0ceca056/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".product-name"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '48'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"03c84326-6ad8-426c-879d-fda005007930"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/03c84326-6ad8-426c-879d-fda005007930/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '62'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Federal - Small Pistol Primers - #100 pack of 1000"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/25af673b-a876-4d5d-9452-9d1c0ceca056/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".availability > span"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '55'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"474541a8-18b1-410e-9e9e-8b4daf02f585"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/474541a8-18b1-410e-9e9e-8b4daf02f585/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '24'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Out of stock"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/25af673b-a876-4d5d-9452-9d1c0ceca056/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".price"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '41'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"81e2e436-fa58-4bfe-8950-c885c77b3bf6"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/81e2e436-fa58-4bfe-8950-c885c77b3bf6/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '18'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"$63.99"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/8b16f413-aac4-4ce4-ad6d-190a525b3bae/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".product-name"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '48'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"21506d07-6291-473c-999b-a366fe5bcb52"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/21506d07-6291-473c-999b-a366fe5bcb52/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '73'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Sellier and Bellot Primers - Large Rifle Magnum - Box of
+        1000"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/81947f7a-f2d4-47f1-bfbe-cee8b4e8104a/element
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":".product-name"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Content-Length:
+      - '48'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"38c0dff4-01f5-442b-8f75-b4b08d25c6f5"}}'
+  recorded_at: Sun, 12 Dec 2021 16:35:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9651/session/187892ea7826e4e84f6ddd7e096fa52a/element/38c0dff4-01f5-442b-8f75-b4b08d25c6f5/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/4.1.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '66'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Sellier and Bellot Primers - Large Rifle - Box of 1000"}'
+  recorded_at: Sun, 12 Dec 2021 16:35:24 GMT
+recorded_with: VCR 6.0.0
