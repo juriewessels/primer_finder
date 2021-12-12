@@ -1,0 +1,1 @@
+web: sidekiq -C config/sidekiq.yml -r ./lib/find_primer_scheduler.rb
