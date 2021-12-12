@@ -6,9 +6,10 @@ require 'selenium-webdriver'
 require 'uri'
 require_relative '../lib/scrape_vendor'
 require_relative '../lib/callable'
+require_relative '../lib/notify'
+require_relative '../lib/format_message'
 
 Dotenv.load
-
 
 class FindPrimers
 
@@ -19,14 +20,22 @@ class FindPrimers
   end
 
   def call
+    products = @vendors.map do |vendor| 
+      ScrapeVendor.call(driver: selenium_driver, vendor: vendor)
+    end
+
+    Notify.call(message: FormatMessage.call(products: products.flatten))
+  end
+
+  private
+
+  def selenium_driver
     options =
-      Selenium::WebDriver::Chrome::Options.new.tap { |opts| opts.add_argument('--headless') }
-    driver =  Selenium::WebDriver.for :chrome, capabilities: [options]
-
-    results = 
-      @vendors.map {|vendor| ScrapeVendor.call(driver: driver, vendor: vendor) }
-
-    results.flatten.compact
+      Selenium::WebDriver::Chrome::Options.new.tap do |opts| 
+        opts.add_argument('--headless') 
+      end
+    
+    Selenium::WebDriver.for :chrome, capabilities: [options]
   end
 
 end

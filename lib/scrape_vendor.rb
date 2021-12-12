@@ -20,7 +20,7 @@ class ScrapeVendor
 
 	def scrape_vendor
 		@driver.navigate.to URI.join(@vendor[:url])
-    products.map { |product| get_data(product) }
+    products.map { |product| get_data(product) }.compact
 	end
 
   def products
