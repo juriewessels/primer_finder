@@ -35,7 +35,8 @@ class ScrapeVendor
     { 
       vendor: @vendor[:name], 
       title: product_title, 
-      stock_status: product.find_element(css: @selectors[:availability]).text.downcase,
+      stock_status: 
+        product.find_element(css: @selectors[:availability]).text.downcase,
       price: product.find_element(css: @selectors[:price]).text.downcase
     }
   end

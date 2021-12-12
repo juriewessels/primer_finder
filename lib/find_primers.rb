@@ -15,8 +15,8 @@ class FindPrimers
 
   extend Callable
 
-  def initialize
-    @vendors = JSON.parse(File.read('./vendors.json'), symbolize_names: true)
+  def initialize(vendors:)
+    @vendors = vendors
   end
 
   def call
@@ -25,8 +25,6 @@ class FindPrimers
     end
 
     Notify.call(message: FormatMessage.call(products: products.flatten))
-
-    products
   end
 
   private

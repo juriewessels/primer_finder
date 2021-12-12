@@ -1,5 +1,9 @@
+require 'byebug'
 require 'vcr'
 require 'webmock/rspec'
+
+require 'dotenv'
+Dotenv.load('.env.test')
 
 VCR.configure do |c|
   # the directory where your cassettes will be saved

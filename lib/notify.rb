@@ -1,4 +1,5 @@
 require 'net/smtp'
+require_relative '../lib/callable'
 
 class Notify
 
@@ -21,10 +22,11 @@ class Notify
     smtp.enable_starttls
 
     smtp.start(ENV['EMAIL_DOMAIN'], ENV['EMAIL_USERNAME'], 
-      ENV['EMAIL_PASSWORD'], :login) do
-      smtp.send_message("#{SUBJECT}#{@message}", ENV['EMAIL_FROM'],
-        ENV['EMAIL_TO'])
-    end
+      ENV['EMAIL_PASSWORD'], :login)
+    smtp.send_message("#{SUBJECT}#{@message}", ENV['EMAIL_FROM'],
+      ENV['EMAIL_TO'])
+    
+    smtp.finish
   end
 
 end
