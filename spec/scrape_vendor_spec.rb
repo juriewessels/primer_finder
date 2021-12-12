@@ -1,4 +1,3 @@
-require 'vcr'
 require 'selenium-webdriver'
 require_relative '../spec/spec_helper'
 require_relative '../lib/scrape_vendor'

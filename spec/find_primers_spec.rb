@@ -1,4 +1,3 @@
-require 'vcr'
 require_relative '../spec/spec_helper'
 require_relative '../lib/find_primers'
 
