@@ -9,7 +9,8 @@ RSpec.describe FormatMessage do
 
   let(:formatted_message) do 
     "vendor: tenda.com\ntitle: federal small pistol magnum primers, no200,"\
-    " 1000/box\nstock_status: in stock\nprice: $89.99\n"
+    " 1000/box\nstock_status: in stock\nprice: $89.99\n"\
+    "url: https://www.gotenda.com/product-category/reloading/primers/pistol-primers/\n"
   end
 
   subject(:call) { described_class.call(products: products) }

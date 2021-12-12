@@ -37,7 +37,8 @@ class ScrapeVendor
       title: product_title, 
       stock_status: 
         product.find_element(css: @selectors[:availability]).text.downcase,
-      price: product.find_element(css: @selectors[:price]).text.downcase
+      price: product.find_element(css: @selectors[:price]).text.downcase,
+      url: @vendor[:url]
     }
   end
 
