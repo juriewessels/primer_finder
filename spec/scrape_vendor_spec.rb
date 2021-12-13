@@ -26,7 +26,7 @@ RSpec.describe ScrapeVendor do
     subject(:call) { described_class.call(driver: driver, vendor: vendors[0]) }
 
     it 'returns the correct products for the vendor' do
-      VCR.use_cassette('find_primers', match_requests_on: %i[method path]) do
+      VCR.use_cassette('scrape_vendor', match_requests_on: %i[method path]) do
         expect(call).to match_array(products)
       end
     end
