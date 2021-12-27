@@ -5,9 +5,9 @@ class SnoozeProduct
 
   extend  Callable
 
-  ONE_DAY = 86400
+  SNOOZE_SEC = 300
 
-  def initialize(product:, snooze_length: ONE_DAY)
+  def initialize(product:, snooze_length: SNOOZE_SEC)
     @product = product
     @snooze_length = snooze_length
     @redis = Redis.new

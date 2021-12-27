@@ -5,9 +5,6 @@ class FindPrimerScheduler
   include Sidekiq::Worker
 
   def perform
-    logger = Logger.new(STDOUT)
-    logger.info("Finding primers...")
-
     vendors = JSON.parse(File.read('./vendors.json'), symbolize_names: true)
     FindPrimers.call(vendors: vendors)
   end
