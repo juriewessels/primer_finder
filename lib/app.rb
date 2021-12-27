@@ -1,8 +1,4 @@
-require 'byebug'
 require 'sinatra'
-require 'redis'
-require 'uri'
-
 require_relative '../lib/services/snooze_product'
 
 get '/snooze' do
