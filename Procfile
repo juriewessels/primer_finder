@@ -1,0 +1,1 @@
+worker: sidekiq -C config/sidekiq.yml -r ./lib/services/find_primer_scheduler.rb
