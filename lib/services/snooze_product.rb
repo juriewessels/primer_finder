@@ -5,7 +5,7 @@ class SnoozeProduct
 
   extend  Callable
 
-  SNOOZE_SEC = 300
+  SNOOZE_SEC = 120
 
   def initialize(product:, snooze_length: SNOOZE_SEC)
     @product = product
