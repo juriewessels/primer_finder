@@ -1,6 +1,7 @@
 require 'twilio-ruby'
 require 'net/smtp'
-require_relative '../lib/callable'
+
+require_relative 'callable.rb'
 
 class Notify
 

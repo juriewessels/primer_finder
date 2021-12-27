@@ -1,5 +1,5 @@
-require_relative '../spec/spec_helper'
-require_relative '../lib/notify'
+require_relative '../spec_helper.rb'
+require_relative '../../lib/services/notify.rb'
 
 RSpec.describe Notify do
   let(:message_body) do 

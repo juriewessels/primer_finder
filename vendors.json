@@ -2,22 +2,22 @@
     {
         "name": "tenda.com",
         "url": "https://www.gotenda.com/product-category/reloading/primers/pistol-primers/",
+        "availability_phrase": "in stock",
         "selectors": {
             "product": ".product",
             "title": ".products-title",
             "availability": ".stock",
-            "availability_phrase": "out of stock",
             "price": ".amount"
         }
     },
     {
         "name": "tesro.com",
         "url": "https://www.tesro.ca/reloading/primers.html?limit=all",
+        "availability_phrase": "in stock",
         "selectors": {
             "product": ".products-grid > .item",
             "title": ".product-name",
             "availability": ".availability > span",
-            "availability_phrase": "out of stock",
             "price": ".price"
         }
     }

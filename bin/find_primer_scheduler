@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
-require_relative '../lib/worker.rb'
+require_relative '../lib/services/find_primer_scheduler.rb'
 
 FindPrimerScheduler.perform_async

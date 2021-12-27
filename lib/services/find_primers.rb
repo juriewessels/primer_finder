@@ -1,10 +1,11 @@
 require 'byebug'
 require 'dotenv'
 require 'selenium-webdriver'
-require_relative '../lib/scrape_vendor'
-require_relative '../lib/callable'
-require_relative '../lib/notify'
-require_relative '../lib/format_message'
+
+require_relative 'scrape_vendor.rb'
+require_relative 'callable.rb'
+require_relative 'notify.rb'
+require_relative 'format_message.rb'
 
 Dotenv.load
 

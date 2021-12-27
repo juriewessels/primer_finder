@@ -1,5 +1,5 @@
 require 'sidekiq-scheduler'
-require_relative '../lib/find_primers.rb'
+require_relative './find_primers.rb'
 
 class FindPrimerScheduler
   include Sidekiq::Worker

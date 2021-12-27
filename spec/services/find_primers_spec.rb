@@ -1,5 +1,5 @@
-require_relative '../spec/spec_helper'
-require_relative '../lib/find_primers'
+require_relative '../../spec/spec_helper'
+require_relative '../../lib/services/find_primers'
 
 RSpec.describe FindPrimers do
 
