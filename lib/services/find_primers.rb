@@ -1,5 +1,6 @@
 require 'byebug'
 require 'dotenv'
+require 'redis'
 require 'selenium-webdriver'
 
 require_relative 'scrape_vendor.rb'
@@ -15,14 +16,26 @@ class FindPrimers
 
   def initialize(vendors:)
     @vendors = vendors
+    @logger = Logger.new(STDOUT)
   end
 
   def call
+    @logger.info("Finding primers...")
+
     products = @vendors.map do |vendor| 
       ScrapeVendor.call(driver: selenium_driver, vendor: vendor)
+    end.flatten
+
+    # This is nar nar. 
+    active_products = reject_snoozed(reject_out_of_stock(products))
+
+    if active_products.empty?
+      @logger.info("No new primers found.")
+      return
     end
 
-    Notify.call(message: FormatMessage.call(products: products.flatten))
+    Notify.call(message: FormatMessage.call(products: active_products))
+    @logger.info("Primers found! Notifications sent.")
   end
 
   private
@@ -34,6 +47,17 @@ class FindPrimers
       end
     
     Selenium::WebDriver.for :chrome, capabilities: [options]
+  end
+
+  def reject_out_of_stock(products)
+    products.reject { |product| !product.has_stock? }
+  end
+
+  def reject_snoozed(products)
+    redis = Redis.new
+    snoozed_products = redis.hkeys('snoozed_products')
+    redis.quit
+    products.reject { |product| snoozed_products.include?(product.id) }
   end
 
 end

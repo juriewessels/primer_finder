@@ -1,11 +1,7 @@
 #!/usr/bin/env ruby
-
 require_relative '../lib/services/find_primers.rb'
 
-logger = Logger.new(STDOUT)
-logger.info("Finding primers...")
-
-vendors = JSON.parse(File.read('./vendors.json'), symbolize_names: true)
-results = FindPrimers.call(vendors: vendors)
-
-logger.info(results)
+FindPrimers.call(
+  vendors: JSON.parse(File.read('./vendors.json'), 
+  symbolize_names: true)
+)
