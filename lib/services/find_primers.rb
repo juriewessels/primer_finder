@@ -41,9 +41,12 @@ class FindPrimers
   private
 
   def selenium_driver
+    @logger.info("HERRERERE JRELKRJELKJREL #{ENV.fetch('GOOGLE_CHROME_BIN', nil)}")
+
     options =
       Selenium::WebDriver::Chrome::Options.new.tap do |opts| 
-        opts.add_argument('--headless') 
+        opts.add_argument('--headless')
+        opts.binary = ENV.fetch('GOOGLE_CHROME_SHIM', nil)
       end
     
     Selenium::WebDriver.for :chrome, capabilities: [options]
