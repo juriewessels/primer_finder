@@ -46,6 +46,7 @@ class FindPrimers
     options =
       Selenium::WebDriver::Chrome::Options.new.tap do |opts| 
         opts.add_argument('--headless')
+        opts.add_argument('--no-sandbox')
         opts.binary = ENV.fetch('GOOGLE_CHROME_SHIM', nil)
       end
     
