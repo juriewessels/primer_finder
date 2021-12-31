@@ -20,7 +20,7 @@ class FindPrimers
   end
 
   def call
-    @logger.info("Finding primers...")
+    @logger.info('Finding primers...')
 
     products = @vendors.map do |vendor| 
       ScrapeVendor.call(driver: selenium_driver, vendor: vendor)
@@ -30,12 +30,12 @@ class FindPrimers
     active_products = reject_snoozed(reject_out_of_stock(products))
 
     if active_products.empty?
-      @logger.info("No new primers found.")
+      @logger.info('No new primers found.')
       return
     end
 
     Notify.call(message: FormatMessage.call(products: active_products))
-    @logger.info("Primers found! Notifications sent.")
+    @logger.info('Primers found! Notifications sent.')
   end
 
   private
@@ -43,15 +43,22 @@ class FindPrimers
   def selenium_driver
     options = Selenium::WebDriver::Chrome::Options.new
 
-    if chrome_bin = ENV["GOOGLE_CHROME_SHIM"]
-       options.add_argument "--no-sandbox"
-       options.binary = chrome_bin
-     end
+    if chrome_bin = ENV['GOOGLE_CHROME_BIN']
+      options.add_argument('--no-sandbox')
+      options.add_argument('--disable-dev-shm-usage')
+      options.binary = chrome_bin
+    end
 
     options.add_argument('--headless')
     options.add_argument('--disable-gpu')
     
-    Selenium::WebDriver::Chrome::Service.driver_path = "/app/.chromedriver/bin/chromedriver"
+    @logger.info('--------------------CHROME OPTIONS:----------------')
+    @logger.info(options.as_json)
+
+    puts '--------------------CHROME OPTIONS:----------------'
+    puts options.as_json
+
+    Selenium::WebDriver::Chrome::Service.driver_path = '/app/.chromedriver/bin/chromedriver'
     Selenium::WebDriver.for :chrome, capabilities: [options]
   end
 

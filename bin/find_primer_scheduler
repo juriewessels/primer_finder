@@ -1,4 +1,9 @@
 #!/usr/bin/env ruby
 require_relative '../lib/services/find_primer_scheduler.rb'
 
+logger = Logger.new(STDOUT)
+
+logger.info('---------------start find primer scheduler---------------------')
+puts '---------------start find primer scheduler---------------------'
+
 FindPrimerScheduler.perform_async
