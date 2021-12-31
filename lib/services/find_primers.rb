@@ -41,14 +41,15 @@ class FindPrimers
   private
 
   def selenium_driver
-    @logger.info("CHROME SHIM: #{ENV.fetch('GOOGLE_CHROME_BIN', nil)}")
+    options = Selenium::WebDriver::Chrome::Options.new
 
-    options = Selenium::WebDriver::Chrome::Options.new.tap do |opts| 
-        opts.add_argument('--headless')
-        opts.add_argument('--no-sandbox')
-        opts.add_argument('--disable-gpu')
-        opts.binary = ENV.fetch('GOOGLE_CHROME_BIN', nil)
-      end
+    if chrome_bin = ENV["GOOGLE_CHROME_SHIM"]
+       options.add_argument "--no-sandbox"
+       options.binary = chrome_bin
+     end
+
+    options.add_argument('--headless')
+    options.add_argument('--disable-gpu')
     
     Selenium::WebDriver::Chrome::Service.driver_path = "/app/.chromedriver/bin/chromedriver"
     Selenium::WebDriver.for :chrome, capabilities: [options]
