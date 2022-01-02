@@ -57,7 +57,7 @@ class FindPrimers
     Selenium::WebDriver::Chrome::Service.driver_path = 
       '/app/.chromedriver/bin/chromedriver'
     
-    Selenium::WebDriver.for :chrome, capabilities: [options]
+    Selenium::WebDriver.for(:chrome, capabilities: [options])
   end
 
   def reject_out_of_stock(products)
