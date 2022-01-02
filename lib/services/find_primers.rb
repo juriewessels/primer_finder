@@ -36,6 +36,7 @@ class FindPrimers
 
     Notify.call(message: FormatMessage.call(products: active_products))
     @logger.info('Primers found! Notifications sent.')
+    selenium_driver.quit
   end
 
   private
