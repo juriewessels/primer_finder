@@ -1,4 +1,4 @@
 :schedule:
   find_primer_scheduler:
-    cron: '* * * * *'   # Runs every minute
+    cron: '*/5 * * * *'   # Runs every 5 minute
     class: FindPrimerScheduler
