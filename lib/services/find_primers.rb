@@ -53,6 +53,7 @@ class FindPrimers
     options.add_argument('--headless')
     options.add_argument('--disable-gpu')
 
+    Selenium::WebDriver.logger.level = :debug
     Selenium::WebDriver::Chrome::Service.driver_path = 
       '/app/.chromedriver/bin/chromedriver'
     
