@@ -52,14 +52,10 @@ class FindPrimers
 
     options.add_argument('--headless')
     options.add_argument('--disable-gpu')
+
+    Selenium::WebDriver::Chrome::Service.driver_path = 
+      '/app/.chromedriver/bin/chromedriver'
     
-    @logger.info('--------------------CHROME OPTIONS:----------------')
-    @logger.info(options.as_json)
-
-    puts '--------------------CHROME OPTIONS:----------------'
-    puts options.as_json
-
-    Selenium::WebDriver::Chrome::Service.driver_path = '/app/.chromedriver/bin/chromedriver'
     Selenium::WebDriver.for :chrome, capabilities: [options]
   end
 
