@@ -44,19 +44,21 @@ class FindPrimers
   def selenium_driver
     options = Selenium::WebDriver::Chrome::Options.new
 
-    if chrome_bin = ENV['GOOGLE_CHROME_BIN']
-      options.add_argument('--no-sandbox')
-      options.add_argument('--disable-dev-shm-usage')
-      options.add_argument('--remote-debugging-port=9222')
-      options.binary = chrome_bin
-    end
+    # if chrome_bin = ENV['GOOGLE_CHROME_BIN']
+    #   options.add_argument('--no-sandbox')
+    #   options.add_argument('--disable-dev-shm-usage')
+    #   options.add_argument('--remote-debugging-port=9222')
+    #   options.binary = chrome_bin
+    # end
 
-    options.add_argument('--headless')
+    # options.add_argument('--headless')
+
+    options.binary = ENV['GOOGLE_CHROME_BIN']
 
 
     Selenium::WebDriver.logger.level = :debug
-    Selenium::WebDriver::Chrome::Service.driver_path = 
-      '/app/.chromedriver/bin/chromedriver'
+    # Selenium::WebDriver::Chrome::Service.driver_path = 
+    #   '/app/.chromedriver/bin/chromedriver'
     
     Selenium::WebDriver.for(:chrome, capabilities: [options])
   end
